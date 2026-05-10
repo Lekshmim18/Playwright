@@ -1,0 +1,32 @@
+{
+  "name": "playwright-zero-to-hero",
+  "version": "1.0.0",
+  "description": "Professional end-to-end test automation framework using Playwright with Page Object Model pattern",
+  "main": "playwright.config.ts",
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "test:headed": "playwright test --headed",
+    "test:report": "playwright show-report",
+    "test:swag-labs": "playwright test tests/Swag\\ Labs\\ E2E",
+    "test:practice": "playwright test tests/Swag\\ Labs\\ Practice",
+    "test:automation": "playwright test tests/automation-practice",
+    "test:lambdatest": "playwright test tests/LambdaTest\\ Playground"
+  },
+  "keywords": [
+    "playwright",
+    "e2e-testing",
+    "test-automation",
+    "qa",
+    "page-object-model",
+    "typescript",
+    "testing-framework"
+  ],
+  "author": "QA Automation Engineer",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.3.3"
+  }
+}
