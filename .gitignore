@@ -7,6 +7,5 @@ node_modules/
 /playwright/.cache/
 /playwright/.auth/
 
-# Practice & Learning Folders (keep locally, exclude from Git)
-pages/swaglabs-practice-old/
+# Practice & Learning Folders
 pageobject/
