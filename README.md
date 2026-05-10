@@ -7,6 +7,8 @@
 
 A comprehensive end-to-end test automation framework built with **Playwright** and **TypeScript**, demonstrating professional testing patterns and best practices.
 
+> **🚧 Repository Status:** This project is currently **in progress** and actively being developed. Features and documentation are being continuously improved.
+
 ## 🎯 Project Overview
 
 This is a production-ready Playwright framework featuring:
