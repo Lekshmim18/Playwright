@@ -244,9 +244,9 @@ This project is licensed under the ISC License - see [LICENSE](LICENSE) file for
 ## 📧 Contact
 
 For questions or feedback, feel free to reach out:
-- LinkedIn: [Your LinkedIn Profile]
-- Email: [Your Email]
-- GitHub: [@yourusername]
+- LinkedIn: [https://www.linkedin.com/in/lekshmi-mahadevan-81b9141a8/]
+- Email: [Lekshmi Mahadevan]
+- GitHub: [@lekshmim18]
 
 ---
 
