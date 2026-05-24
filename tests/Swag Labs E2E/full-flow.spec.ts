@@ -45,7 +45,8 @@ test('Full Flow', async ({ page }) =>
   const orderDetails = await productPage.getOrderConfirmationDetails();
   console.log('Order Successfully Placed:', orderDetails);
 
-  //logout
-  //await logoutPage.logout();
+  // Logout
+  await logoutPage.logout();
+  await expect(page).toHaveURL('https://www.saucedemo.com/');
 
 });

@@ -12,7 +12,7 @@ export class LogoutPage
 
   async logout(): Promise<void> 
   {
-    await expect(this.page).toHaveURL('https://www.saucedemo.com/inventory.html');
+    //await expect(this.page).toHaveURL('https://www.saucedemo.com/inventory.html');
     await this.page.getByText('Open Menu').click();
     await this.page.getByText('Logout').click();
   }
