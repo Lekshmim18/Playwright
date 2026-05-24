@@ -31,4 +31,47 @@ export class ProductPage {
   {
     await this.cartLink.click();
   }
+
+  async clickContinueShoppingButton(): Promise<void>
+  {
+    await this.page.locator('[data-test="continue-shopping"]').click();
+  }
+
+  async fillCheckoutDetails(firstName: string, lastName: string, postalCode: string): Promise<void>
+  {
+    await this.page.getByPlaceholder('First Name').fill(firstName);
+    await this.page.getByPlaceholder('Last Name').fill(lastName);
+    await this.page.getByPlaceholder('Zip/Postal Code').fill(postalCode);
+  }
+
+  async clickContinueButton(): Promise<void>
+  {
+    await this.page.locator('[data-test="continue"]').click();
+  }
+
+  async clickCheckoutButton(): Promise<void>
+  {
+    await this.page.getByRole('button', { name: 'Checkout' }).click();
+  }
+
+  async clickFinishButton(): Promise<void>
+  {
+    await this.page.getByRole('button', { name: 'Finish' }).click();
+  }
+
+  async captureOrderConfirmation(): Promise<string>
+  {
+    const confirmationMessage = await this.page.locator('[data-test="complete-header"]').innerText();
+    console.log('Order Confirmation Message:', confirmationMessage);
+    return confirmationMessage;
+  }
+
+  async getOrderConfirmationDetails(): Promise<{ message: string; subMessage: string }>
+  {
+    const message = await this.page.locator('[data-test="complete-header"]').innerText();
+    const subMessage = await this.page.locator('[data-test="complete-text"]').innerText();
+    console.log('Order Details - Message:', message);
+    console.log('Order Details - Sub Message:', subMessage);
+    return { message, subMessage };
+  }
 }
