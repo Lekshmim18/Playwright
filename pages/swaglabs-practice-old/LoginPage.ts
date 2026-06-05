@@ -32,4 +32,17 @@ export class LoginPage {
   {
     await this.loginButton.click();
   }
+
+  async login(username: string, password: string): Promise<void>
+  {
+    await this.enterUsername(username);
+    await this.enterPassword(password);
+    await this.clickLoginButton();
+  }
+
+  async loginpageerrormessage(): Promise<void>
+  {
+    const errorMessage = await this.page.locator('[data-test="error"]').innerText();
+    console.log('Error Message:', errorMessage);
+  }
 }
