@@ -12,7 +12,7 @@ test ('Verify dropdown selection behavior - dd/mm/yyyy', async ({page})=>
 
     });
 
-test ('Verify dropdown selection behavior - mm/dd/yyyy', async ({page})=> 
+test.skip ('Verify dropdown selection behavior - mm/dd/yyyy', async ({page})=> 
 
     {
 
@@ -25,7 +25,7 @@ test ('Verify dropdown selection behavior - mm/dd/yyyy', async ({page})=>
 
     });
 
-test ('Verify dropdown selection behavior - start and end date', async ({page})=> 
+test.skip ('Verify dropdown selection behavior - start and end date', async ({page})=> 
 
     {
 

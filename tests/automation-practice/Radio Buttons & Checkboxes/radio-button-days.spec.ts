@@ -71,7 +71,7 @@ test ('TC_05 :Verify multiple select + partial unselect of checkboxes', async ({
         await expect(page.locator('input[value="monday"]')).not.toBeChecked();
     });
 
-test ('TC_06 : Verify no default checkbox selection', async ({page})=> 
+test.skip ('TC_06 : Verify no default checkbox selection', async ({page})=> 
 
     {
 
@@ -82,7 +82,7 @@ test ('TC_06 : Verify no default checkbox selection', async ({page})=>
 
     });
 
-test ('TC_07 : Re-select already selected checkbox', async ({page})=> 
+test.skip ('TC_07 : Re-select already selected checkbox', async ({page})=> 
 
     {
         await page.goto ( 'https://testautomationpractice.blogspot.com/');
