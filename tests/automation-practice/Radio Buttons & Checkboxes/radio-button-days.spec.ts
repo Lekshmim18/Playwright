@@ -76,8 +76,9 @@ test ('TC_06 : Verify no default checkbox selection', async ({page})=>
     {
 
         await page.goto ( 'https://testautomationpractice.blogspot.com/');
-        const count = await expect(page.locator('input[type="checkbox"] : (checked)')).toHaveCount(0);
-        console.log('the count is : count')
+        const count = await page.locator('input[type="checkbox"]:checked').count();
+        await expect(count).toBe(0);
+        console.log('the count is :', count)
 
     });
 
@@ -87,6 +88,6 @@ test ('TC_07 : Re-select already selected checkbox', async ({page})=>
         await page.goto ( 'https://testautomationpractice.blogspot.com/');
         await page.locator('input[id="thursday"]').check();
         await expect(page.locator('input[id="thursday"]')).toBeChecked();
-        await page.locator('input[id="thursday"]').check();
+        await page.locator('input[id="thursday"]').uncheck();
         await expect(page.locator('input[id="thursday"]')).not.toBeChecked();
     });
