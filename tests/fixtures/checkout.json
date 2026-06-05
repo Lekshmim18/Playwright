@@ -1,0 +1,39 @@
+{
+  "validCheckouts": [
+    {
+      "firstName": "John",
+      "lastName": "Doe",
+      "postalCode": "12345",
+      "testCase": "standard"
+    },
+    {
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "postalCode": "54321",
+      "testCase": "alternate"
+    }
+  ],
+  "missingFields": [
+    {
+      "firstName": "",
+      "lastName": "Doe",
+      "postalCode": "12345",
+      "expectedError": "Error: First Name is required",
+      "testCase": "missing-firstname"
+    },
+    {
+      "firstName": "John",
+      "lastName": "",
+      "postalCode": "12345",
+      "expectedError": "Error: Last Name is required",
+      "testCase": "missing-lastname"
+    },
+    {
+      "firstName": "John",
+      "lastName": "Doe",
+      "postalCode": "",
+      "expectedError": "Error: Postal Code is required",
+      "testCase": "missing-postalcode"
+    }
+  ]
+}

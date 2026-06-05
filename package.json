@@ -12,7 +12,13 @@
     "test:swag-labs": "playwright test tests/Swag\\ Labs\\ E2E",
     "test:practice": "playwright test tests/Swag\\ Labs\\ Practice",
     "test:automation": "playwright test tests/automation-practice",
-    "test:lambdatest": "playwright test tests/LambdaTest\\ Playground"
+    "test:lambdatest": "playwright test tests/LambdaTest\\ Playground",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:regression": "playwright test --grep @regression",
+    "test:chrome": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox",
+    "test:webkit": "playwright test --project=webkit",
+    "test:all-browsers": "playwright test"
   },
   "keywords": [
     "playwright",
